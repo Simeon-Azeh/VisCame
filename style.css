@@ -11,6 +11,27 @@ body, html {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Track */
+::-webkit-scrollbar {
+  width: 6px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); /* color of the scrollbar handle */
+  border-radius: 2px; /* rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color); /* color of the scrollbar handle on hover */
+}
+
+
 .loader {
     display: flex;
     height: 100vh;
@@ -124,6 +145,7 @@ body, html {
 
   .content {
     display: none; /* Hide content initially */
+    padding-top: 80px;
    
 }
 header {
@@ -188,7 +210,8 @@ header {
 }
 .navlinks ul li a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600 !important;
+  font-size: 0.9em;
   color: var(--primary-color);
   padding: 5px 10px;
   display: block;
@@ -295,12 +318,12 @@ body > div.content > header > div > div.nav_buttons > button:nth-child(2):hover 
 
  @-webkit-keyframes slide-top {
   0% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   100% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
 @keyframes slide-top {
@@ -309,8 +332,8 @@ body > div.content > header > div > div.nav_buttons > button:nth-child(2):hover 
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
 
@@ -341,3 +364,159 @@ body > div.content > header > div > div.nav_buttons > button:nth-child(2):hover 
             transform: translateX(20px);
   }
 }
+
+/* Hero section */
+
+.text_container {
+   display: flex;
+   width: 100%;
+   padding: 0px 40px;
+   box-sizing: border-box;
+}
+.text_container h1 {
+  width: 60%;
+  font-size: 38px;
+  color: var(--primary-color);
+}
+.text_container p {
+  width: 60%;
+  font-size: 1em; /* Base font size */
+  line-height: 1.6em; /* Line height for readability */
+  font-weight: 500;
+  margin-top: 25px;
+  padding-top: 15px;
+  max-width: 650px; /* Optional: Max width to control text width */
+  color: var(--primary-color); /* Text color */
+  background-color: #fff; /* Background color for paragraph */
+  border-left: 4px solid var(--secondary-color); /* Left border for emphasis */
+  padding-left: 1em; /* Padding to separate text from border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text_container span {
+  color: green;
+}
+.tt2 {
+  color: #f9232c !important;
+}
+.tt3 {
+  color: rgb(233, 233, 14) !important;
+  
+}
+.hos {
+  color: var(--secondary-color) !important;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 9px; /* Adjust the padding to accommodate the height of the SVG */
+}
+
+.hos::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 20px; /* Increased height of the SVG */
+  background: url('data:image/svg+xml;utf8,<svg width="100%" height="20" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q25,0 50,10 T100,10" stroke="%23f9232c" stroke-width="2.5" fill="none"/></svg>') no-repeat center;
+  bottom: 0;
+  left: 0;
+}
+.hero_div {
+  margin-top: 40px;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+  margin-top: -20px;
+  cursor: grab;
+}
+
+swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.swipper_card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: opacity 0.3s ease 0s;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 10;
+  margin-top: 60px !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  margin-top: 20px;
+}
+.card_head {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 320px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease;
+}
+.img img:hover {
+  transform: scale(1.03);
+}
+.card_body {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card_body h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.card_body a {
+  display: inline-block;
+  background-color: #f9232c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.card_body a:hover,
+
+.see-more-btn:hover {
+  background-color: #e3242b;
+}
+
+
+.see-more-btn {
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 160px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
