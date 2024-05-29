@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo_two.png" alt=""></a>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Book <i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="dropdown slide-top">
+                                <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
+                                <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                                <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Explore <i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="dropdown slide-top">
+                                <li><a href="#"><i class="fa-solid fa-city"></i> Cities</a></li>
+                                <li><a href="#"> <i class="fa-solid fa-building-columns"></i>Attractions</a></li>
+                                <li><a href="#"><i class="fa-solid fa-compass"></i>Tours</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Visa Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav_buttons">
+                    <button>Sign up</button>
+                    <button>Login</button>
+                </div>
+            </div>
+            <i class="ri-menu-3-line" id="mobile_menu"></i>
+        </header>
+       
+        <div class="mobile_nav_menu slide-left">
+            <i class="ri-close-line" id="mobile_menu_close"></i> <!-- Icon to close mobile menu -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book</a>
+                    <ul class="dropdown">
+                        <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                        <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Explore</a>
+                    <ul class="dropdown">
+                        <li><a href="#"><i class="fa-solid fa-city"></i> Cities</a></li>
+                                <li><a href="#"> <i class="fa-solid fa-building-columns"></i> Attractions</a></li>
+                                <li><a href="#"><i class="fa-solid fa-compass"></i> Tours</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Visa Info</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        
+      
+    </div>
+   
+</body>
+<script src="script.js"></script>
+</html>

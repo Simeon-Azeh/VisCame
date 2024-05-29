@@ -1,0 +1,205 @@
+:root {
+    --primary-color : #183153;
+    --secondary-color: #f9232c;
+  }
+
+/* Hide the mobile navigation menu by default */
+.mobile_nav_menu {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* Style for mobile navigation menu */
+.mobile_nav_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile_nav_menu li {
+    padding: 10px 20px;
+}
+
+.mobile_nav_menu li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s;
+}
+
+.mobile_nav_menu li a:hover {
+    color: var(--secondary-color);
+}
+#mobile_menu {
+    display: none; /* Hide the mobile menu button by default */
+    position: absolute;
+    font-weight: 600;
+    top: 30px;
+    right: 30px; /* Adjust the position as needed */
+    font-size: 28px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    /* Styles for iPads */
+    header {
+     
+        padding: 20px 0;
+    }
+    .navlinks {
+        display: none; /* Hide the regular navigation links on iPads */
+    }
+
+    .nav_buttons {
+        display: none; /* Hide the navigation buttons on iPads */
+    }
+
+    .mobile_nav {
+        display: block;
+      
+    }
+
+    
+    #mobile_menu {
+    display: block;
+        }
+
+    
+
+ /* Styles for mobile navigation menu */
+.mobile_nav_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+    padding-top: 50px; /* Adjust if needed */
+    overflow: hidden;
+}
+
+#mobile_menu_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for X icon */
+#mobile_menu_close:hover {
+    color: var(--secondary-color);
+}
+
+    .mobile_nav_menu.active {
+        display: block; /* Display the mobile navigation menu when active */
+    }
+
+    .mobile_nav_menu ul {
+        list-style: none;
+        padding: 0;
+        padding-top: 40px;
+        margin: 0;
+       
+    }
+
+    .mobile_nav_menu li {
+        padding: 20px 60px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile_nav_menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+      
+        display: block;
+        transition: color 0.3s;
+    }
+
+    .mobile_nav_menu li a:hover {
+        color: var(--secondary-color);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #mobile_menu {
+ 
+        top: 25px;
+        right: 20px;
+        font-size: 24px;
+        
+    }
+    .mobile_nav_menu {
+        padding-top: 10px; /* Adjust if needed */
+        overflow: hidden;
+    }
+    .navbar {
+       
+         padding: 0; 
+     
+    }
+
+    .mobile_nav_menu li {
+         padding: 8px 10px; 
+        border-bottom: 1px solid #eee;
+    }
+    .mobile_nav_menu ul {
+      
+        padding-top: 20px;
+        margin: 0;
+    }
+    .mobile_nav_menu li a {
+      
+        font-size: 18px; 
+        
+    }
+    #mobile_menu_close {
+ 
+        top: 25px;
+        right: 25px;
+        font-size: 28px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+    }
+    .slide-left {
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    
+     @-webkit-keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+      100% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+      }
+    }
+    @keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+      100% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+      }
+    }
+    
+}
