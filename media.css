@@ -38,8 +38,8 @@
     display: none; /* Hide the mobile menu button by default */
     position: absolute;
     font-weight: 600;
-    top: 30px;
-    right: 30px; /* Adjust the position as needed */
+    top: 10px;
+    right: 40px; /* Adjust the position as needed */
     font-size: 28px;
     color: var(--primary-color);
     cursor: pointer;
@@ -54,7 +54,7 @@
     /* Styles for iPads */
     header {
      
-        padding: 20px 0;
+        padding: 0px;
     }
     .navlinks {
         display: none; /* Hide the regular navigation links on iPads */
@@ -71,6 +71,7 @@
     
     #mobile_menu {
     display: block;
+
         }
 
     
@@ -186,15 +187,65 @@
         font-weight: 600;
         color: #fff;
     } 
-
+    .carousel-text {
+        width: 100%;
+        position: relative ; 
+        top: 60px;
+        right: 0;
+        margin-bottom: 20px;
+    }
+    .carousel-text h2 {
+        color: var(--primary-color);
+        margin-bottom: 0px;
+        margin-top: -40px;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .carousel-slide .img_con {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .carousel-slide .img_con img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .dot-container {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .section_two .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .box {
+        width: 80%;
+       
+    }
+    .newsletter .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter .container .con {
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
   
 }
 
 @media only screen and (max-width: 767px) {
     #mobile_menu {
  
-        top: 25px;
-        right: 20px;
+        top: 14px;
+        right: 30px;
         font-size: 24px;
         
     }
@@ -264,20 +315,56 @@
 
     .text_container h1 {
         font-size: 22px;
-        text-align: center;
+      margin-left: 0;
+      text-align: center;
      
     }
     .hos::before {
         content: "";
         position: absolute;
         width: 120px;
-        height: 10px;
-        bottom: 0;
+        height: 20px;
+        bottom: -5px;
         left: 0;
     }
     .text_container p {
-        width: 90%;
+        width: 99%;
     }
-
-    
+    .dot-container {
+        margin-top: 80px;
+    }
+    .section_two {
+      
+        padding: 10px; 
+    }
+    .carousel-text p {
+        text-align: justify;
+    }
+    .section_one {
+        padding: 30px;
+    }
+    .text-container {
+        width: 100%;
+    }
+    .clients-wrap {
+     
+         justify-content: space-evenly; 
+    }
+    .services,
+    .section4, .newsletter {
+        padding: 20px;
+    }
+    .newsletter .container .ico {
+        width: 100%;
+    }
+    .con p {
+     font-size: 0.8em;
+    }
+    .newsletterform form button {
+        width: 100%;
+    }
+    .newsletterform form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
