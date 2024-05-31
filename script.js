@@ -33,6 +33,18 @@ mobileMenuClose.addEventListener('click', function() {
     mobileNavMenu.classList.remove('active');
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const destinationsCount = new countUp.CountUp('destinations-count', 236);
+  const toursCount = new countUp.CountUp('tours-count', 1700);
+  const customersCount = new countUp.CountUp('customers-count', 5890);
+  const guidesCount = new countUp.CountUp('guides-count', 120);
+  
+  destinationsCount.start();
+  toursCount.start();
+  customersCount.start();
+  guidesCount.start();
+});
+
 
 const items = document.querySelectorAll(".accordion button");
 
