@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="/css/booking.css">
+    <link rel="stylesheet" href="/css/bookingmedia.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.coam/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="shortcut icon" href="/assets/logo_one.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="/assets/logo_two.png" alt=""></a>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="nav/booking.html">Book <i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="dropdown slide-top">
+                                <li><a href="#"><i class="fa-solid fa-compass"></i> Tours</a></li>
+                                <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
+                                <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                                <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Explore <i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="dropdown slide-top">
+                                <li><a href="#"><i class="fa-solid fa-city"></i> Cities</a></li>
+                                <li><a href="#"> <i class="fa-solid fa-building-columns"></i>Attractions</a></li>
+                                <li><a href="#"><i class="fa-solid fa-mountain"></i> Mountains</a></li>
+                                <li><a href="#"><i class="fa-solid fa-tree"></i> Parks</a></li>
+                                <li><a href="#"><i class="fa-solid fa-umbrella-beach"></i> Beaches</a></li>
+                                <li><a href="#"><i class="fa-solid fa-utensils"></i> Restaurants</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Visa Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav_buttons">
+                    <button>Login</button>
+                    <button>Sign up</button>
+
+                </div>
+            </div>
+            <i class="ri-menu-3-line" id="mobile_menu"></i>
+        </header>
+
+        <div class="mobile_nav_menu slide-left">
+            <i class="ri-close-line" id="mobile_menu_close"></i> <!-- Icon to close mobile menu -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book</a>
+                    <ul class="dropdown">
+                        <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                        <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Explore <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown slide-top">
+                        <li><a href="#"><i class="fa-solid fa-city"></i> Cities</a></li>
+                        <li><a href="#"> <i class="fa-solid fa-building-columns"></i>Attractions</a></li>
+                        <li><a href="#"><i class="fa-solid fa-mountain"></i> Mountains</a></li>
+                        <li><a href="#"><i class="fa-solid fa-tree"></i> Parks</a></li>
+                        <li><a href="#"><i class="fa-solid fa-umbrella-beach"></i> Beaches</a></li>
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i> Restaurants</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Visa Info</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="mobile_nav_buttons">
+                <button>Login</button>
+                <button>Sign up</button>
+
+            </div>
+        </div>
+        <div class="hero">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="slide-content flight_slide">
+                            <div class="slide___content">
+                                <h1 class="swift-up-text">Ready to fly?</h1>
+                                <p>Find the best deals on round-trip flights to Cameroon.</p>
+                                <form class="booking-form">
+                                    <div class="form-row">
+                                        <div class="select-container">
+                                            <select id="tripType" name="tripType">
+                                                <option value="round">Round Trip</option>
+                                                <option value="one-way">One Way</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-container">
+                                            <select id="passengers" name="passengers">
+                                                <option value="1">1 Passenger</option>
+                                                <option value="2">2 Passengers</option>
+                                                <option value="3">3 Passengers</option>
+                                                <option value="4">4 Passengers</option>
+                                                <option value="5">5 Passengers</option>
+                                                <option value="6">6 Passengers</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-container">
+                                            <select id="classType" name="classType">
+                                                <option value="economy">Economy</option>
+                                                <option value="business">Business</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_col">
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput" type="text" name="myCountry" placeholder="From">
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ri-arrow-left-right-fill"></i>
+                                        </div>
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput2" type="text" name="myCountry" placeholder="To" class="arrive">
+                                        </div>
+                                        <div class="datess">
+                                            <input placeholder="Departure" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                            <i class="fas fa-calendar-check icon2"></i>
+                                        </div>
+                                        <div class="datess">
+                                            <input placeholder="Return" type="text" name="checkIn" id="datepicker2" value="" class="calendar">
+                                            <i class="fas fa-calendar-check icon2"></i>
+                                        </div>
+                                        <button type="submit" class="flight_btn">Search Flights
+                                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                            </lord-icon>
+                                        </button>
+                                    </div>
+                                   
+                                </form>
+                                <p class="other_info">We recommend booking on the main website page, you will also find lots of discounts <a href="#">Learn More <i class="ri-external-link-fill"></i></a></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content hotel_slide">
+                            <div class="slide___content">
+                                <h1>Find Hotels</h1>
+                                <p>Discover the best hotels for your stay.</p>
+                               
+                                <form class="booking-form">
+                                    <div class="form-row">
+                                        <select id="roomType" name="roomType">
+                                            <option value="single">Single Room</option>
+                                            <option value="double">Double Room</option>
+                                            <option value="suite">Suite</option>
+                                            <option value="family">Family Room</option>
+                                            <option value="deluxe">Deluxe Room</option>
+                                            <option value="superior">Superior Room</option>
+                                        </select>
+                                        <select id="priceRange" name="priceRange">
+                                            <option value="0-50">$0 - $50</option>
+                                            <option value="51-100">$51 - $100</option>
+                                            <option value="101-150">$101 - $150</option>
+                                            <option value="151-200">$151 - $200</option>
+                                            <option value="201-300">$201 - $300</option>
+                                            <option value="301-500">$301 - $500</option>
+                                            <option value="501-1000">$501 - $1000</option>
+                                            <option value="1001-more">$1001 and above</option>
+                                        </select>
+                                        
+                                      </div>
+                                    <div class="form_col">
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput4" type="text" name="myCountry" placeholder="Destination">
+                                        </div>
+                                        <div class="datess">
+                                            <input placeholder="Check in" type="text" name="checkIn" id="datepicker3" value="" class="calendar">
+                                            <i class="fas fa-calendar-check icon2"></i>
+                                        </div>
+                                        <div class="datess">
+                                            <input placeholder="Check out" type="text" name="checkIn" id="datepicker4" value="" class="calendar">
+                                            <i class="fas fa-calendar-check icon2"></i>
+                                        </div>
+                                       <div class="datess">
+                                        <input type="number" id="numAdults" name="numAdults" placeholder="Adults" min="1" max="10">
+                                       </div>
+                                       <div class="datess">
+                                        <input type="number" id="numAdults" name="numChildren" placeholder="Children" min="0" max="10">
+                                       </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="flight_btn">Search Hotels
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon>
+                                    </button>
+                                </form>
+                                <p class="other_info">Check out the best hotel deals on the hotel booking page, you will also find lots of discounts <a href="#">Discover <i class="ri-external-link-fill"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content ride_slide">
+                            <div class="slide___content">
+                                <h1>Book Ride Services</h1>
+                                <p>Get the best transportation options for your journey.</p>
+                                <form class="booking-form">
+                                    <div class="form-row">
+                                        <!-- Ride Type Selector -->
+                                                <select id="rideType">
+                                                    <option value="standard">Standard</option>
+                                                    <option value="premium">Premium</option>
+                                                    <option value="deluxe">Deluxe</option>
+                                                </select>
+
+                                        <!-- Car Type Selector -->
+                                                <select id="carType">
+                                                    <option value="sedan">Sedan</option>
+                                                    <option value="suv">SUV</option>
+                                                    <option value="luxury">Luxury</option>
+                                                </select>
+                                                                                    </div>
+                                    <div class="form_col">
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput5" type="text" name="myCountry" placeholder="Pickup location">
+                                        </div>
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput6" type="text" name="myCountry" placeholder="Drop-off location">
+                                        </div>
+                                        <div class="datess">
+                                            <input placeholder="Pickup Date" type="text" name="checkIn" id="datepicker5" value="" class="calendar">
+                                            <i class="fas fa-calendar-check icon2"></i>
+                                        </div>
+                                       <div class="datess">
+                                        <input type="time" placeholder="Pickup Time" />
+                                       </div>
+                                    </div>
+                                   
+                                    <button type="submit" class="flight_btn">Search Rides
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+       <div class="promotions">
+            <h1 class="section-title center-title">Promotions</h1>
+            <div class="tab_con">
+            
+                <div class="tab">
+                    <button class="tablinks" onclick="openBook(event, 'Tours')" id="defaultOpen">Tours</button>
+                    <button class="tablinks" onclick="openBook(event, 'Rides')">Rides</button>
+                    <button class="tablinks" onclick="openBook(event, 'Flights')">Flights</button>
+                    <button class="tablinks" onclick="openBook(event, 'Hotels')">Hotels</button>
+                    <a href="#">Show all</a>
+                </div>  
+            </div>
+            <div class="tabs">
+                <div id="Tours" class="tabcontent">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="card">
+                                <img src="/assets/limbe-2-2.jpg" alt="Image 1">
+                                <div class="overlay"></div>
+                                <div class="card-content">
+                                    <h2>Limbe</h2>
+                                    <p> Coastal city with vibrant markets, stunning beaches, and the Limbe Wildlife Centre, home to rescued primates and reptiles.</p>
+                                    <button>Book
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="grid-item">
+                            <div class="card">
+                                <img src="/assets/Buea.jpg" alt="Image 2">
+                                <div class="overlay"></div>
+                                <div class="card-content">
+                                    <h2><strong>Buea</strong></h2>
+                                    <p>Picturesque town nestled on Mount Cameroon's slopes, offering panoramic views, rich history, and access to hiking trails.</p>
+                                    <button>Book
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="card">
+                                <img src="/assets/dja-faunal-reserve-cameroon_08.jpg" alt="Image 3">
+                                <div class="overlay"></div>
+                                <div class="card-content">
+                                    <h2><strong>Dja Faunal</strong></h2>
+                                    <p>UNESCO World Heritage Site, Dja Faunal Reserve, renowned for its biodiversity, including rare wildlife and pristine rainforest habitats.</p>
+                                    <button>Book
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="card">
+                                <img src="/assets/hotel-taz-kribi-cameroun-pieds.jpg" alt="Image 4">
+                                <div class="overlay"></div>
+                                <div class="card-content">
+                                    <h2><strong>Kribi</strong></h2>
+                                    <p> Seaside town known for its pristine beaches, lush rainforests, and the stunning Chutes de la Lobé waterfall.</p>
+                                    <button>Book
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Rides" class="tabcontent">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_ride">
+                                <h1>ZGO</h1>
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>Dla Intl Aiport </span> <i class="fa-solid fa-car-side"></i> <span>Hotel Palais</span></h1>
+                                    <p><span>from</span> $15</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>Round trip</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Lyft</h1>
+                                        <p><span>from</span> $18</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Via</h1>
+                                        <p><span>from</span> $21</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Juno</h1>
+                                        <p><span>from</span> $22</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_ride">
+                                    <h1>Yego</h1>
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                        <h1><span>Yde Intl Airport </span> <i class="fa-solid fa-car-side"></i> <span>Hotel Palais</span></h1>
+                                        <p><span>from</span> $13</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>One way</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Uber</h1>
+                                        <p><span>from</span> $20</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Via</h1>
+                                        <p><span>from</span> $25</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Juno</h1>
+                                        <p><span>from</span> $28</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_ride">
+                                    <h1>Yego</h1>
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                        <h1><span>Yde Intl Airport </span> <i class="fa-solid fa-car-side"></i> <span>Hotel Palais</span></h1>
+                                        <p><span>from</span> $13</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>One way</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Uber</h1>
+                                        <p><span>from</span> $20</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Via</h1>
+                                        <p><span>from</span> $25</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Juno</h1>
+                                        <p><span>from</span> $28</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_ride">
+                                    <h1>Yego</h1>
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                        <h1><span>Yde Intl Airport </span> <i class="fa-solid fa-car-side"></i> <span>Hotel Palais</span></h1>
+                                        <p><span>from</span> $13</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>One way</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Uber</h1>
+                                        <p><span>from</span> $20</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Via</h1>
+                                        <p><span>from</span> $25</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Juno</h1>
+                                        <p><span>from</span> $28</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                
+                <div id="Flights" class="tabcontent">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_flight">
+                                <img src="/assets/Turkish-Airlines-Logo-2008.png" alt="">
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>New York (JFK)  </span> <i class="fa-solid fa-plane"></i>  <span>Douala (DLA)</span></h1>
+                                    <p><span>from</span> $1299</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>International flight</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Airline B</h1>
+                                        <p><span>from</span> $1320</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline C</h1>
+                                        <p><span>from</span> $1420</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline D</h1>
+                                        <p><span>from</span> $2420</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_flight">
+                                    <img src="/assets/kqlogo.png" alt="">
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>Kigali (KGL)  </span> <i class="fa-solid fa-plane"></i>  <span>Douala (DLA)</span></h1>
+                                    <p><span>from</span> $380</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>International flight</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Airline B</h1>
+                                        <p><span>from</span> $1320</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline C</h1>
+                                        <p><span>from</span> $1420</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline D</h1>
+                                        <p><span>from</span> $2420</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_flight">
+                                    <img src="/assets/ethiopian-airlines-logo.png" alt="">
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>DUBAI (DUB)  </span> <i class="fa-solid fa-plane"></i>  <span>Douala (DLA)</span></h1>
+                                    <p><span>from</span> $480</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>International flight</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Airline B</h1>
+                                        <p><span>from</span> $1520</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline C</h1>
+                                        <p><span>from</span> $2499</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline D</h1>
+                                        <p><span>from</span> $2600</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_flight">
+                                    <img src="/assets/Logo_Camair-Co.png" alt="" class="img_offset">
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>Douala (DLA)  </span> <i class="fa-solid fa-plane"></i>  <span>Yaounde (YDE)</span></h1>
+                                    <p><span>from</span> $69</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>Domestic flight</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Airline B</h1>
+                                        <p><span>from</span> $160</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Not available</h1>
+                                        
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Not available</h1>
+                                    
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_flight">
+                                <img src="/assets/RwandAir_Logotype.png" alt="">
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>CAPE TOWN (CAT)  </span> <i class="fa-solid fa-plane"></i>  <span>Douala (DLA)</span></h1>
+                                    <p><span>from</span> $676</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>International flight</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Airline B</h1>
+                                        <p><span>from</span> $1320</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline C</h1>
+                                        <p><span>from</span> $1420</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline D</h1>
+                                        <p><span>from</span> $2420</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="flight-card">
+                                <div class="card-header">
+                                <div class="logo_flight">
+                                <img src="/assets/Turkish-Airlines-Logo-2008.png" alt="">
+                                </div>
+                                </div>
+                                <div class="header-content">
+                                    <div class="overlay_flight"></div>
+                                    <div class="header-text">
+                                    <h1><span>Vancouver (VCR)  </span> <i class="fa-solid fa-plane"></i>  <span>Douala (DLA)</span></h1>
+                                    <p><span>from</span> $1999</p>
+                                    <div class="info">
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/yxczfiyc.json"
+                                        trigger="loop"
+                                        delay="2000"
+                                        colors="primary:#ffffff"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    <p>International flight</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body">
+                                
+                                <div class="other-airlines">
+                                    <div class="line">  
+                                        <h1>Airline B</h1>
+                                        <p><span>from</span> $2800</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline C</h1>
+                                        <p><span>from</span> $3420</p>
+                                    </div>
+                                    <div class="line">  
+                                        <h1>Airline D</h1>
+                                        <p><span>from</span> $4420</p>
+                                    </div>
+                    
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                <a href="#">All offers</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="Hotels" class="tabcontent">
+                    <div class="grid-container hotels">
+                    
+                        <div class="grid-item">
+                            <div class="card_hotel">
+                            <div class="img_hotel">
+                                <img src="/assets/hotel-residence-la-falaise.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card_head">
+                                    <div class="row">
+                                        <h1>Gostone, Y'de</h1>
+                                        <i class="ri-heart-line"></i>
+                                    </div>
+                                    <div class="row_2">
+                                        <p><i class="ri-star-fill"></i>4.9<span>(75)</span></p>
+                                        <p>2.2km</p>
+                                    </div>
+                                </div>
+                                <div class="row_3">
+                                    <h3>$360<span>/2nights</span></h3>
+                                    <button>Details
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon> 
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <div class="grid-item">
+                            <div class="card_hotel">
+                            <div class="img_hotel">
+                                <img src="/assets/hotel-residence-la-falaise.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card_head">
+                                    <div class="row">
+                                        <h1>Gostone, Y'de</h1>
+                                        <i class="ri-heart-line"></i>
+                                    </div>
+                                    <div class="row_2">
+                                        <p><i class="ri-star-fill"></i>4.9<span>(75)</span></p>
+                                        <p>2.2km</p>
+                                    </div>
+                                </div>
+                                <div class="row_3">
+                                    <h3>$360<span>/2nights</span></h3>
+                                    <button>Details
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon> 
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="card_hotel">
+                            <div class="img_hotel">
+                                <img src="/assets/hotel-residence-la-falaise.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card_head">
+                                    <div class="row">
+                                        <h1>Gostone, Y'de</h1>
+                                        <i class="ri-heart-line"></i>
+                                    </div>
+                                    <div class="row_2">
+                                        <p><i class="ri-star-fill"></i>4.9<span>(75)</span></p>
+                                        <p>2.2km</p>
+                                    </div>
+                                </div>
+                                <div class="row_3">
+                                    <h3>$360<span>/2nights</span></h3>
+                                    <button>Details
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon> 
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="card_hotel">
+                            <div class="img_hotel">
+                                <img src="/assets/hotel-residence-la-falaise.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card_head">
+                                    <div class="row">
+                                        <h1>Gostone, Y'de</h1>
+                                        <i class="ri-heart-line"></i>
+                                    </div>
+                                    <div class="row_2">
+                                        <p><i class="ri-star-fill"></i>4.9<span>(75)</span></p>
+                                        <p>2.2km</p>
+                                    </div>
+                                </div>
+                                <div class="row_3">
+                                    <h3>$360<span>/2nights</span></h3>
+                                    <button>Details
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon> 
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="card_hotel">
+                            <div class="img_hotel">
+                                <img src="/assets/hotel-residence-la-falaise.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card_head">
+                                    <div class="row">
+                                        <h1>Gostone, Y'de</h1>
+                                        <i class="ri-heart-line"></i>
+                                    </div>
+                                    <div class="row_2">
+                                        <p><i class="ri-star-fill"></i>4.9<span>(75)</span></p>
+                                        <p>2.2km</p>
+                                    </div>
+                                </div>
+                                <div class="row_3">
+                                    <h3>$360<span>/2nights</span></h3>
+                                    <button>Details
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon> 
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="card_hotel">
+                            <div class="img_hotel">
+                                <img src="/assets/hotel-residence-la-falaise.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card_head">
+                                    <div class="row">
+                                        <h1>Gostone, Y'de</h1>
+                                        <i class="ri-heart-line"></i>
+                                    </div>
+                                    <div class="row_2">
+                                        <p><i class="ri-star-fill"></i>4.9<span>(75)</span></p>
+                                        <p>2.2km</p>
+                                    </div>
+                                </div>
+                                <div class="row_3">
+                                    <h3>$360<span>/2nights</span></h3>
+                                    <button>Details
+                                        <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:16px;height:16px;padding-top: 4px;padding-left: 2px;">
+                                        </lord-icon> 
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <h2 class="section-title center-title">Booking has never been easier</h2>
+            <div class="steps-container">
+                <div class="step completed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+                    </svg>
+                    <div class="label completed">
+                        Search
+                    </div>
+                    <div class="icon completed">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="line completed"></div>
+                <div class="step completed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+                    </svg>
+                    <div class="label completed">
+                        Select
+                    </div>
+                    <div class="icon completed">
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="line next-step-in-progress"></div>
+                <div class="step in-progress">
+                    <div class="preloader"></div>
+                    <div class="label loading">
+                        Book
+                    </div>
+                    <div class="icon in-progress">
+                        <i class="far fa-calendar-check"></i>
+                    </div>
+                </div>
+                <div class="line prev-step-in-progress"></div>
+                <div class="step">
+                    <div class="label">
+                        Payment
+                    </div>
+                    <div class="icon">
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <div class="label">
+                        Confirm
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <p><span>We move fast.</span> Provide us your email for updates on exciting offers</p>
+            <div class="newsletter_container">
+                <input type="text" placeholder="Email">
+                <button>Subscribe</button>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+
+        
+        <div class="membership">
+            <div class="container">
+                <div class="member_text">
+                    <h1>Not a member yet?</h1>
+                    <p>Join us! Our members can enjoy discounts of up to 50% and earn trip points while booking.</p>
+                </div>
+                <div class="nav_button">
+                    <button>Login <i class="ri-arrow-right-up-line"></i></button>
+                    <button class="reg">Register <i class="ri-arrow-right-up-line"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Don’t miss any updates on tourism and discounts.!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                    _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Quick links</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#"><i class="fa-solid fa-home"></i> Home</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-ticket-alt"></i> Book</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-globe"></i> Explore</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-passport"></i> Visa Info</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                                style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Services</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#"><i class="fa-solid fa-compass"></i> Tours</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-city"></i> Cities</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-building-columns"></i> Attractions</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-mountain"></i> Mountains</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-tree"></i> Parks</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-umbrella-beach"></i> Beaches</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-utensils"></i> Restaurants</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                                style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#"><i class="fa-solid fa-question-circle"></i> FAQ</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-file-contract"></i> Terms &amp; Conditions</a>
+                                    </li>
+                                    <li><a href="#"><i class="fa-solid fa-flag"></i> Reporting</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-file-alt"></i> Documentation</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-shield-alt"></i> Support Policy</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-user-secret"></i> Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                                style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                <div class="f_social_icon">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                    <a href="#" class="fab fa-whatsapp"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">&copy; VisCam Inc.. 2025 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Officially sponsored <i class="icon_heart"></i>by <a href="https://explore.sidecedu.com"
+                                    target="_blank">Sidec</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+   
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/booking.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/arrival.js"></script>
+    <script src="/js/bookjquery.js"></script>
+    <script src="/js/hotel.js"></script>
+</body>
+
+</html>

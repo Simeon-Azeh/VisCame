@@ -1,0 +1,387 @@
+:root {
+    --primary-color : #183153;
+    --secondary-color: #f9232c;
+  }
+
+/* Hide the mobile navigation menu by default */
+.mobile_nav_menu {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* Style for mobile navigation menu */
+.mobile_nav_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile_nav_menu li {
+    padding: 10px 20px;
+}
+
+.mobile_nav_menu li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s;
+}
+
+.mobile_nav_menu li a:hover {
+    color: var(--secondary-color);
+}
+#mobile_menu {
+    display: none; /* Hide the mobile menu button by default */
+    position: absolute;
+    font-weight: 600;
+    top: 10px;
+    right: 40px; /* Adjust the position as needed */
+    font-size: 28px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /* Styles for iPads */
+    header {
+     
+        padding: 0px;
+    }
+    .navlinks {
+        display: none; /* Hide the regular navigation links on iPads */
+    }
+
+   .nav_buttons {
+    display: none;
+   }
+    .mobile_nav {
+        display: block;
+      
+    }
+
+    
+    #mobile_menu {
+    display: block;
+
+        }
+
+    
+
+ /* Styles for mobile navigation menu */
+.mobile_nav_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+    padding-top: 50px; /* Adjust if needed */
+    overflow: hidden;
+}
+
+#mobile_menu_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for X icon */
+#mobile_menu_close:hover {
+    color: var(--secondary-color);
+}
+
+    .mobile_nav_menu.active {
+        display: block; /* Display the mobile navigation menu when active */
+    }
+
+    .mobile_nav_menu ul {
+        list-style: none;
+        padding: 0;
+        padding-top: 40px;
+        margin: 0;
+       
+    }
+
+    .mobile_nav_menu li {
+        padding: 20px 60px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile_nav_menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+      
+        display: block;
+        transition: color 0.3s;
+    }
+
+    .mobile_nav_menu li a:hover {
+        color: var(--secondary-color);
+    }
+
+    .mobile_nav_buttons {
+        padding: 20px 0px 0px 60px;
+        gap: 20px;
+    }
+    body > div.content > div.mobile_nav_menu.slide-left.active > div > button:nth-child(1) {
+        background-color: #fff;
+        padding: 10px 16px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--secondary-color);
+    } 
+
+    body > div.content > div.mobile_nav_menu.slide-left.active > div > button:nth-child(2) {
+        background-color: transparent;
+        padding: 10px 16px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    } 
+    body > div.content > footer > div.new_footer_top > div.container > div > div:nth-child(1) > div > form {
+        margin-bottom: 20px;
+    }
+    .new_footer_top .f-title {
+        margin-bottom: 0px;
+    }
+    .f_widget.about-widget .f_list li:last-child {
+        margin-bottom: 20px;
+    }
+    body > div.content > footer > div.new_footer_top > div.container > div > div:nth-child(5) > div > div {
+        margin-bottom: 20px;
+    }
+    body > div.content > footer > div.new_footer_top > div.container > div > div:nth-child(5) > div > h3 {
+        margin-bottom: 20px;
+    }
+
+    .flight_slide,
+    .hotel_slide,
+    .ride_slide {
+        height: 60vh !important;
+    }
+    .form_col {
+        width: 100%;
+    }
+    .booking-form input {
+        font-size: 14px;
+    }
+    .datess i {
+        font-size: 14px;
+        right: 15px !important;
+    }
+    #numAdults {
+        width: 95px !important;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #mobile_menu {
+ 
+        top: 14px;
+        right: 30px;
+        font-size: 24px;
+        
+    }
+    .mobile_nav_menu {
+        padding-top: 10px; /* Adjust if needed */
+        overflow: hidden;
+    }
+    .navbar {
+       
+         padding: 0; 
+     
+    }
+
+    .mobile_nav_menu li {
+         padding: 8px 10px; 
+        border-bottom: 1px solid #eee;
+    }
+    .mobile_nav_menu ul {
+      
+        padding-top: 20px;
+        margin: 0;
+    }
+    .mobile_nav_menu li a {
+      
+        font-size: 18px; 
+        
+    }
+    #mobile_menu_close {
+ 
+        top: 25px;
+        right: 25px;
+        font-size: 28px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+    }
+    .slide-left {
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    
+     @-webkit-keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+      100% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+      }
+    }
+    @keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+      100% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+      }
+    }
+
+    body > div.content > div.other_dis > div > div:nth-child(2) > h2 {
+        margin-left: 15px;
+    }
+    .reviews {
+        height: 100vh;
+    }
+    .f_widget.about-widget .f_list {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      
+     }
+     .new_footer_top .f-title {
+         text-align: center;
+         margin-bottom: 20px;
+     }
+    
+    .f_list li a i {
+        display: none;
+    }
+    body > div.content > footer > div.new_footer_top > div.container > div > div:nth-child(5) > div > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 5px !important;
+        padding: 0;
+    }
+    .flight_slide,
+    .hotel_slide,
+    .ride_slide {
+        height: 100% !important;
+    }
+    .booking-form {
+        height: 450px !important;
+        box-sizing: border-box;
+    }
+    .hotel_slide .booking-form .form-row {
+        flex-direction: column;
+    }
+    .form_col {
+        width: 100%;
+        flex-direction: column;
+    }
+    .flight_slide h1, .hotel_slide h1, .ride_slide h1 {
+        font-size: 1.5em !important;
+    }
+    .flight_slide p {
+        font-weight: 400 !important;
+    }
+    .slide___content {
+        width: 80% !important;
+        padding-top: 40px;
+    }
+    .other_info p{
+        font-size: 1em !important;
+        margin-top: -20px !important;
+    }
+    .autocomplete {
+        width: 100% !important;
+        z-index: 9999 !important;
+    }
+    .booking-form .icon i {
+        top: -30px !important;
+        left: 40% !important;
+    }
+    .flight_btn {
+        position: absolute;
+        right: 20px;
+        top: 95% !important;
+    }
+    #numAdults {
+        width: 100% !important;
+    }
+    .tab {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+   .tab a {
+    padding: 0px !important;
+   }
+
+   .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 10px !important;
+}
+.promotions {
+    padding: 20px !important;
+}
+body .main-container .steps-container {
+    padding: 20px 40px !important;
+}
+.main-container {
+    height: 200px;
+}
+.main-container h2 {
+    margin-top: -40px !important;
+    margin-bottom: 40px !important;
+}
+body .main-container .steps-container .step .label {
+    font-weight: 400 !important;
+}
+
+.membership .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.membership .container .member_text {
+    width: 100% !important;
+    text-align: center !important;  
+}
+.newsletter {
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+}
+}
