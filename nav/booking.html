@@ -52,7 +52,7 @@
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="nav/booking.html">Book <i class="ri-arrow-down-s-line"></i></a>
                             <ul class="dropdown slide-top">
-                                <li><a href="#"><i class="fa-solid fa-compass"></i> Tours</a></li>
+                                <li><a href="/booking/tour.html"><i class="fa-solid fa-compass"></i> Tours</a></li>
                                 <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
                                 <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
                                 <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
@@ -84,9 +84,10 @@
         <div class="mobile_nav_menu slide-left">
             <i class="ri-close-line" id="mobile_menu_close"></i> <!-- Icon to close mobile menu -->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Book</a>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/nav/booking.html">Book</a>
                     <ul class="dropdown">
+                        <li><a href="/booking/tour.html"><i class="fa-solid fa-compass"></i> Tours</a></li>
                         <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
                         <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
                         <li><a href="#"><i class="fa-solid fa-car"></i> Ride Services</a></li>
@@ -255,6 +256,9 @@
                                     <div class="form_col">
                                         <div class="autocomplete" style="width:300px;">
                                             <input id="myInput5" type="text" name="myCountry" placeholder="Pickup location">
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ri-arrow-left-right-fill"></i>
                                         </div>
                                         <div class="autocomplete" style="width:300px;">
                                             <input id="myInput6" type="text" name="myCountry" placeholder="Drop-off location">
@@ -1179,6 +1183,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                                style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Language</h3>
+                                <!-- Select Language -->
+                                <div class="select_language">
+                                    <select id="language_select">
+                                        <option value="en">English</option>
+                                        <option value="fr">French</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="footer_bg">
@@ -1212,6 +1230,8 @@
     <script src="/js/arrival.js"></script>
     <script src="/js/bookjquery.js"></script>
     <script src="/js/hotel.js"></script>
+    <script src="/js/plocation.js"></script>
+    <script src="/js/dlocation.js"></script>
 </body>
 
 </html>

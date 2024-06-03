@@ -593,7 +593,303 @@ body > div.content > header > div > div.nav_buttons > button:nth-child(2):hover 
   .f_list li a i {
     margin-right: 5px;
   }
+
+  .select_language select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    color: #6a7695;
+    cursor: pointer;
+}
+
+.select_language select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.select_language select option {
+    background-color: #fff;
+    color: #6a7695;
+}
+
   
   /*************footer End*****************/
   
   
+
+  /* Tour css */
+  .hero_tour {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/assets/bghero_tour.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  .overlay_tour {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+    z-index: -99 !important; /* Ensure it's above other content */
+    pointer-events: none; /* Allow clicks to pass through */
+}
+.hero_tour_content {
+  z-index: 99 !important;
+}
+.hero_tour_content h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.booking_form_tour {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background-color: #fff;
+ 
+}
+.booking_form_tour form {
+ display: flex;
+ align-items: center;
+ justify-content: center !important; 
+ gap: 40px;
+  width: 100%;
+   height: 100%;
+  padding: 20px 40px;
+}
+.form-group{
+  width: 100%;
+}
+
+
+
+
+
+.booking_form_tour form input[type="text"],
+.booking_form_tour form input[type="number"],
+.booking_form_tour form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #6a7695;
+  outline: none;
+}
+
+
+.booking_form_tour form input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.booking_form_tour form input:focus,
+.booking_form_tour form select:focus {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+
+.promotions_hero {
+  padding: 100px 80px;
+  background-color: #f9feff;
+  height: 100%;
+}
+.promo_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  
+}
+.promo_head .con_j {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row ;
+  justify-content: center;
+}
+.promo_head p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: var(--primary-color);
+}
+.con_j form select {
+  border: 1px solid #ddd;
+  padding: 5px;
+  color: #6a7695;
+  border-radius: 5px;
+  outline: none;
+
+}.promo_body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 cards per row on larger screens */
+  gap: 20px;
+}
+
+.promo_card {
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 220px;
+}
+
+.promo_card .promo_img {
+  width: 100%;
+  height: 220px;
+  position: relative;
+
+  
+}
+.promo_card .promo_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+.promo_card_content {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 9;
+  position: absolute;
+  bottom: -200px;
+  left: 5%;
+  width: 90%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #fff; /* Adjust the background color and opacity as needed */
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform .3s ease;
+}
+.promo_card_content:hover,
+.promo_card .promo_img img:hover {
+  transform: scale(1.04);
+}
+.rating {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rating p {
+  color: #6a7695;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: -2px;
+}
+
+.promo_card_content h1 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #6a7695;
+}
+.promo_card_content .lrow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+.lrow i {
+  color: var(--secondary-color);
+  margin-top: -16px;
+}
+.lrow p {
+  font-size: 14px;
+  color: #6a7695;
+  margin-left: 8px;
+ 
+}
+.promo_card_footer {
+ border-top: 1px solid #eee;
+ padding-top: 20px !important;
+}
+
+.promo_card_footer a {
+  margin-top: -20px;
+ color: var(--secondary-color);
+ text-decoration: none !important;
+  
+}
+.promo_card_footer .lrow a:hover {
+  color: var(--primary-color) !important;
+  text-decoration: underline !important;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+.pagination a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s ease;
+  background-color: #fff;
+  border: 1px solid #eee;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none !important;
+}
+.pagination a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+}
+.pagination .active_page {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+}
+.pagination .disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.pagination .disabled:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid #eee;
+}
+
+.btn_con {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+

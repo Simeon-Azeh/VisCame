@@ -1826,6 +1826,29 @@ background-size:100%;
 .f_list li a i {
   margin-right: 5px;
 }
+.select_language select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  color: #6a7695;
+  cursor: pointer;
+}
 
+.select_language select:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.select_language select option {
+  background-color: #fff;
+  color: #6a7695;
+}
 /*************footer End*****************/
 

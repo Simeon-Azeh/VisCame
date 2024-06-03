@@ -290,6 +290,9 @@
     .membership .container {
         margin-bottom: 40px;
     }
+    .select_language select {
+        margin-top: 15px;
+    }
   
 
    
@@ -450,9 +453,28 @@
     .f_list li a i {
         display: none;
     }
+    .new_footer_top .company_widget .f_subscribe_two .btn_get {
+        width: 100%;
+    }
     body > div.content > footer > div.new_footer_top > div.container > div > div:nth-child(5) > div > div {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .faqs .container {
+        padding: 1.5rem;
+    }
+    .accordion button .accordion-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .accordion .accordion-content p {
+        margin: 5px !important;
+    }
+    .select_language select {
+        display: flex;
+        margin-top: 0 !important;
+        margin: 0 auto !important;
+    }
+   
 }

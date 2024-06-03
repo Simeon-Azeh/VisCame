@@ -194,6 +194,26 @@
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 10px !important;
     }
+
+    .select_language select {
+        margin-top: 15px;
+    }
+
+    .hero_tour {
+        height: 30vh;
+    }
+    .booking_form_tour form {
+        gap: 20px;
+    }
+    #ui-datepicker-div {
+        top: 45% !important;
+    }
+   
+.promotions_hero {
+    padding: 100px 40px;
+}
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -284,6 +304,10 @@
     
     .f_list li a i {
         display: none;
+    }
+
+    .new_footer_top .company_widget .f_subscribe_two .btn_get {
+        width: 100%;
     }
     body > div.content > footer > div.new_footer_top > div.container > div > div:nth-child(5) > div > div {
         display: flex;
@@ -383,5 +407,31 @@ body .main-container .steps-container .step .label {
     text-align: center;
     align-items: center !important;
     justify-content: center !important;
+}
+
+.select_language select {
+    display: flex;
+    margin-top: 0 !important;
+    margin: 0 auto !important;
+}
+
+.booking_form_tour form {
+    flex-direction: column;
+}
+.hero_tour {
+    height: 80vh;
+    justify-content: initial;
+}
+.hero_tour_content {
+    padding-top: 40px;
+}
+.booking_form_tour {
+    top: 40%;
+}
+.promo_head    {
+    flex-direction: column-reverse;
+}
+.pagination {
+    gap: 2px;
 }
 }

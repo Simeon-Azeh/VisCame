@@ -230,6 +230,7 @@ body {
     border-radius: 15px;
     top: 60% !important;
     border-radius: 10px;
+    z-index: 9999 !important;
   }
   .ui-datepicker-header {
     height: 50px;

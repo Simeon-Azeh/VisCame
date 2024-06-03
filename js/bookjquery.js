@@ -36,6 +36,14 @@ jQuery(document).ready(function () {
     });
 });
 
+jQuery(document).ready(function () {
+    jQuery('#datepicker_tour').datepicker({
+        format: 'dd-mm-yyyy',
+        startDate: '+1d'
+    });
+});
+
+
 
 
 
